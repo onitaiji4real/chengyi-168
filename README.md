@@ -1,13 +1,12 @@
 # 承億搬運網站
 
-承億搬運的靜態官網，使用 Next.js App Router、TypeScript 與 Tailwind CSS 建置。專案以 SSG 為預設，並設定 `output: "export"`，可輸出純靜態檔部署到 Vercel、Netlify 或 GitHub Pages。
+承億搬運的網站，使用 Next.js App Router、TypeScript 與 Tailwind CSS 建置。專案以 Vercel 零設定部署（Zero-Config）為目標，所有頁面皆會由 Next.js 自動靜態優化 (SSG) 並快取於邊緣節點。
 
 ## 技術棧
 
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
-- Static export: `output: "export"`
 - 本地內容資料：`data/site.ts`
 - SEO：Next.js Metadata API
 - 結構化資料：JSON-LD
@@ -40,7 +39,7 @@ out/
 ## Vercel 部署
 
 本專案支援 Vercel 零設定部署（Zero-Config Deployment）：
-Vercel 會自動偵測 Next.js 並讀取 `next.config.ts` 中的 `output: "export"` 來處理靜態輸出，不需額外的 `vercel.json`，否則可能導致部署時在 `Finalizing page optimization` 階段卡住。
+Vercel 會自動偵測 Next.js 並將沒有動態伺服器渲染的頁面做靜態優化 (SSG)。不需額外的 `vercel.json` 或設定 `output: "export"`，這可以避免 Vercel 在某些情況下卡在 `Finalizing page optimization`。
 
 目前 `data/site.ts` 的 `site.url` 暫設為：
 
