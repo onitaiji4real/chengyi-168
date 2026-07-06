@@ -1,0 +1,364 @@
+export const site = {
+  url: "https://{{DOMAIN_PLACEHOLDER}}",
+  name: "承億搬運",
+  englishName: "Cheng-Yi Relocation Services",
+  category: "搬家公司",
+  slogan: "承載所託 | 億心送達",
+  phone: "0965-819-629",
+  contactPerson: "汪承漢",
+  email: "{{EMAIL_PLACEHOLDER}}",
+  lineId: "chengyi-168",
+  lineUrl: "https://line.me/ti/p/chengyi-168",
+  address: "{{FULL_ADDRESS_PLACEHOLDER}}",
+  hours: "{{HOURS_PLACEHOLDER}}",
+  serviceArea: "{{SERVICE_AREA_LIST_PLACEHOLDER}}",
+  serviceAreaShort: "{{SERVICE_AREA}}",
+  lat: "{{LAT}}",
+  lng: "{{LNG}}",
+  placeId: "{{PLACE_ID_PLACEHOLDER}}",
+  googleMapsUrl: "{{GMAPS_DIRECTIONS_URL}}",
+  sameAs: [
+    "{{THREADS_URL_PLACEHOLDER}}",
+    "{{FB_URL_PLACEHOLDER}}",
+    "{{IG_URL_PLACEHOLDER}}"
+  ],
+  logo: "/images/logo-mark.jpg",
+  brandCard: "/images/brand-card.jpg",
+  heroImage: "/images/truck-capacity.jpg",
+  trustSignals: [
+    "價格透明不亂加價",
+    "專人細心防護",
+    "提供專業包裝耗材",
+    "升降尾門安全上車"
+  ],
+  equipment: [
+    {
+      title: "升降尾門貨車",
+      spec: "長 285 x 寬 169 x 高 115 cm",
+      description: "車體空間透明化，估價前就能理解可承載量與裝載方式。",
+      image: "/images/truck-capacity.jpg",
+      alt: "{{SERVICE_AREA}} 承億搬運升降尾門貨車容量實拍"
+    },
+    {
+      title: "專業紙箱",
+      spec: "50 x 35 x 35 cm",
+      description: "適合書籍、餐具、日用品等常見家用品分類打包。",
+      image: "/images/packing-box.jpg",
+      alt: "{{SERVICE_AREA}} 承億搬運專業紙箱實拍"
+    },
+    {
+      title: "大型打包袋",
+      spec: "50 x 65 cm",
+      description: "衣物、寢具與柔軟物品可快速集中，搬運更俐落。",
+      image: "/images/moving-bag.jpg",
+      alt: "{{SERVICE_AREA}} 承億搬運大型打包袋實拍"
+    }
+  ]
+};
+
+export const services = [
+  {
+    slug: "home-moving",
+    title: "家庭精緻搬家",
+    value: "從家具防護到定位搬運，讓全家換屋更省心。",
+    bestFor: "適合有大型家具、家電、電梯大樓或公寓搬遷需求的家庭。",
+    cta: "加 LINE 安排精緻搬家",
+    description: "由專人確認物品數量與搬運環境，協助規劃車趟、包材與搬運順序。"
+  },
+  {
+    slug: "self-moving",
+    title: "自助搬家",
+    value: "最划算的小資選擇，把預算花在真正需要專業的搬運段落。",
+    bestFor: "適合東西不多、有朋友協助搬運的學生、單身族或小家庭。",
+    cta: "詢問自助搬家方案",
+    description: "可依需求安排車輛與司機，協助大型物件上車與安全固定。"
+  },
+  {
+    slug: "night-moving",
+    title: "夜間運輸",
+    value: "配合您的作息與社區時段，降低白天請假與營業中斷成本。",
+    bestFor: "適合上班族、店家移位、需避開尖峰時段或白天不便搬運者。",
+    cta: "預約夜間搬家估價",
+    description: "夜間服務會依時段、距離與社區規範評估，先確認再出車。"
+  },
+  {
+    slug: "equipment-moving",
+    title: "精密儀器護送",
+    value: "重視防震、防刮與搬運動線，讓高價設備安心抵達。",
+    bestFor: "適合工作室設備、辦公設備、精密器材與特殊高價物品。",
+    cta: "諮詢精密搬運",
+    description: "先確認尺寸、重量、固定方式與上下樓條件，再規劃搬運人力。"
+  },
+  {
+    slug: "packing",
+    title: "專業打包",
+    value: "懶人福音，從分類、裝箱到防護都能交給專人協助。",
+    bestFor: "適合忙碌家庭、長輩搬遷、無時間整理或需要高效率打包者。",
+    cta: "加 LINE 詢問打包",
+    description: "提供標準化紙箱與打包袋，降低物品散落、破損與遺漏風險。"
+  }
+];
+
+export const reviews = [
+  "老闆人不錯、價格不貴、服務好。",
+  "Threads 網友熱推搬家神隊友。",
+  "溝通清楚，搬運前會先確認物品與動線。"
+];
+
+export const faqs = [
+  {
+    question: "承億搬運如何計費？以車計價還是包價？",
+    answer:
+      "會先依物品量、搬運距離、樓層、電梯與特殊物件評估。可依需求討論包價或車趟方式，確認後再出車，避免現場資訊落差。"
+  },
+  {
+    question: "會提供紙箱或打包袋嗎？",
+    answer:
+      "可提供 50x35x35cm 專業紙箱與 50x65cm 大型打包袋。建議先透過 LINE 告知物品類型與數量，方便準備合適包材。"
+  },
+  {
+    question: "沒有電梯的公寓怎麼算？",
+    answer:
+      "無電梯會依樓層、搬運距離、物品重量與是否需要加派人力評估。估價時請提供起點與終點樓層，價格會先說明清楚。"
+  },
+  {
+    question: "大型廢棄物可以幫忙丟嗎？",
+    answer:
+      "可先協助評估搬運需求，但廢棄物清運需依所在地規範處理。若需要此服務，請先提供物品照片、尺寸與所在樓層。"
+  },
+  {
+    question: "夜間搬家會加價嗎？",
+    answer:
+      "夜間運輸會依時段、距離、社區限制與人力安排評估。承億搬運會先報價確認，適合無法白天搬家或需避開尖峰的人。"
+  },
+  {
+    question: "{{SERVICE_AREA}} 便宜搬家怎麼預約？",
+    answer:
+      "最有效的方式是透過 LINE 傳物品照片、兩地地址條件與期望日期。物品不多者可詢問自助搬家，通常能更精準控制預算。"
+  },
+  {
+    question: "{{SERVICE_AREA}} 夜間搬家適合哪些人？",
+    answer:
+      "適合白天上班、店面營業、社區有指定搬運時段，或希望避開交通尖峰的人。預約前需確認管理規約與可搬運時間。"
+  },
+  {
+    question: "估價前需要準備哪些資訊？",
+    answer:
+      "請準備起點與終點地址條件、樓層、有無電梯、物品照片、特殊大型家具與希望搬運日期。資訊越完整，估價越接近實際需求。"
+  }
+];
+
+export const blogPosts = [
+  {
+    slug: "declutter-packing-method",
+    title: "{{SERVICE_AREA}} 搬家前斷捨離打包心法",
+    excerpt: "搬家前先分類留用、捐贈、回收與丟棄，能有效降低箱數與搬運成本。",
+    date: "2026-07-07",
+    image: "/images/moving-bag.jpg",
+    alt: "{{SERVICE_AREA}} 搬家前使用大型打包袋分類物品",
+    outline: ["先從半年沒用的物品開始", "重物小箱、輕物大袋", "搬家前一天保留隨身箱"],
+    sections: [
+      {
+        heading: "先整理，再搬家",
+        body: [
+          "很多人搬完家才發現，真正累人的不是搬運，而是把沒有用的東西一起搬到新家。搬家前 7 到 14 天先做斷捨離，可以少裝幾箱，也能讓估價更接近實際需求。",
+          "建議從衣櫃、鞋櫃、雜物櫃開始，把物品分成留用、捐贈、回收、丟棄四類。半年以上沒有使用、尺寸不合、重複購買的物品，通常可以優先處理。"
+        ]
+      },
+      {
+        heading: "箱袋分配更省力",
+        body: [
+          "衣物、寢具、抱枕、棉被等柔軟物品適合放入大型打包袋；書籍、杯盤、工具與小家電則適合放入紙箱。重物不要集中在大箱，否則搬運時容易過重，也會增加紙箱破損風險。",
+          "承億搬運提供 50x65cm 大型打包袋與 50x35x35cm 專業紙箱，可依物品類型協助建議包材。估價時若能先提供照片，會更容易判斷需要幾個箱袋。"
+        ]
+      },
+      {
+        heading: "保留隨身箱",
+        body: [
+          "搬家前一天請另外準備一箱或一袋隨身物品，放入證件、藥品、充電器、鑰匙、簡單盥洗用品、隔天要穿的衣物。這個箱子不要交給搬運人員堆到車內深處，最好由自己保管。",
+          "若你正在規劃 {{SERVICE_AREA}} 搬家，先把物品減量與分類做好，後續估價、裝車與定位都會更順。"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "moving-day-checklist",
+    title: "搬家當天要注意的 5 件事",
+    excerpt: "從電梯保護、貴重物品到鑰匙交接，搬家當天照清單走更穩。",
+    date: "2026-07-07",
+    image: "/images/truck-capacity.jpg",
+    alt: "{{SERVICE_AREA}} 搬家當天升降尾門貨車裝載前檢查",
+    outline: ["確認社區搬運時段", "貴重物品自行保管", "終點先規劃家具定位"],
+    sections: [
+      {
+        heading: "確認社區規定",
+        body: [
+          "搬家當天最常卡住的問題，是社區搬運時段、電梯使用限制與管理室規定。若大樓需要提前申請電梯保護或搬運時段，建議在預約搬家時就同步確認。",
+          "無電梯公寓則要先確認樓梯寬度、轉角、停車距離與是否有大型家具。這些資訊會影響人力安排，也會影響估價。"
+        ]
+      },
+      {
+        heading: "貴重物自己保管",
+        body: [
+          "證件、現金、印章、首飾、筆電、硬碟、藥品與重要文件，建議自行集中在隨身包。搬運人員可以協助大型與大量物品，但私人物品自己保管最清楚也最安心。",
+          "如果有精密儀器、工作設備或高價物品，請在搬運前主動告知尺寸、重量與是否需要防震固定。"
+        ]
+      },
+      {
+        heading: "先規劃家具位置",
+        body: [
+          "搬到新家後才臨時決定家具位置，容易增加等待與重複搬移。建議先簡單畫出床、沙發、冰箱、洗衣機、書櫃的位置，抵達後能直接定位。",
+          "承億搬運會依現場動線協助搬運，但越早確認放置位置，整體時間越好控制。"
+        ]
+      },
+      {
+        heading: "水電鑰匙要確認",
+        body: [
+          "搬家前請確認新家水電可使用，舊家鑰匙、遙控器、門禁卡是否已整理好。若要退租，建議拍照留存屋況與家具狀態。",
+          "最後離開前再巡一次抽屜、櫃子、陽台、浴室與冰箱，這些地方最容易漏東西。"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "stable-box-packing",
+    title: "搬家紙箱怎麼裝最穩？",
+    excerpt: "紙箱不是越滿越好，重量分配、防晃與封箱方式都會影響搬運安全。",
+    date: "2026-07-07",
+    image: "/images/packing-box.jpg",
+    alt: "{{SERVICE_AREA}} 搬家紙箱打包與尺寸實拍",
+    outline: ["書籍分散裝箱", "易碎品加緩衝", "箱外標示房間與內容"],
+    sections: [
+      {
+        heading: "先控制重量",
+        body: [
+          "紙箱不是越大越好，也不是裝越滿越划算。書籍、文件、工具這類重物，建議分散到多個中小型紙箱；衣物與寢具這類輕物，可以改用大型打包袋。",
+          "承億搬運使用 50x35x35cm 專業紙箱，尺寸適合常見居家物品。裝箱後若單手完全提不起來，通常就太重了。"
+        ]
+      },
+      {
+        heading: "易碎品要防晃",
+        body: [
+          "杯盤、玻璃、陶瓷、模型與小家電，建議先用紙、布、氣泡材或衣物做緩衝。箱內空隙要補滿，避免車輛移動時物品互撞。",
+          "盤子可以直立排列，杯子可個別包覆。封箱前輕晃確認沒有明顯碰撞聲，才算基本安全。"
+        ]
+      },
+      {
+        heading: "標示房間與內容",
+        body: [
+          "每箱外側建議寫上房間、內容與是否易碎，例如「廚房 / 餐具 / 易碎」或「臥室 / 冬衣」。抵達新家後可以直接放到對應空間，減少拆箱混亂。",
+          "若要請搬運人員協助定位，箱外標示越清楚，搬運流程越快。"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "cheap-moving-service-area",
+    title: "{{SERVICE_AREA}} 便宜搬家怎麼省預算？",
+    excerpt: "物品量、搬運樓層與是否自助打包，是影響搬家費用的主要因素。",
+    date: "2026-07-07",
+    image: "/images/truck-capacity.jpg",
+    alt: "{{SERVICE_AREA}} 便宜搬家貨車空間估算",
+    outline: ["先減少不必要物品", "集中打包降低等待", "自助搬家適合小量物品"],
+    sections: [
+      {
+        heading: "別只看單一報價",
+        body: [
+          "搬家費用通常與物品量、搬運距離、樓層、有無電梯、停車距離、特殊大型物件與時段有關。只比較單一價格，容易忽略現場追加條件。",
+          "想在 {{SERVICE_AREA}} 找便宜搬家，最重要的是先把資訊講清楚。照片、兩地樓層、電梯、停車位置與預計日期都提供，報價才不容易失準。"
+        ]
+      },
+      {
+        heading: "小量可選自助搬家",
+        body: [
+          "如果物品不多、已經自行打包，也有朋友能協助搬小物，自助搬家通常能控制預算。專業搬運可以集中在貨車、上車固定、重物與大型家具。",
+          "承億搬運的自助搬家適合學生、單身族、小家庭或套房搬遷。先透過 LINE 傳物品照片，可以快速判斷適不適合。"
+        ]
+      },
+      {
+        heading: "少等待就是省錢",
+        body: [
+          "搬運人員到場後才開始打包，會拉長時間，也可能影響後續車趟。建議搬家前一天完成封箱，並把走道、門口與電梯動線清出來。",
+          "大型家具若需要拆裝，請先告知。現場才發現需要工具或加派人力，通常會增加溝通與等待成本。"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "night-moving-service-area",
+    title: "{{SERVICE_AREA}} 夜間搬家預約注意事項",
+    excerpt: "夜間搬家要先確認社區規範、噪音限制與可使用電梯時間。",
+    date: "2026-07-07",
+    image: "/images/services-overview.jpg",
+    alt: "{{SERVICE_AREA}} 夜間搬家服務預約說明",
+    outline: ["先問管理室", "避開安靜時段", "提前整理搬運動線"],
+    sections: [
+      {
+        heading: "夜間搬家適合誰？",
+        body: [
+          "夜間搬家適合白天無法請假、店面需要避開營業時間、或希望避開交通尖峰的人。但夜間不代表任何時間都能搬，仍要遵守社區、鄰里與現場環境限制。",
+          "預約前請先確認起點與終點是否允許夜間搬運，尤其是電梯大樓、社區大樓、商辦或巷弄住宅。"
+        ]
+      },
+      {
+        heading: "先確認搬運時段",
+        body: [
+          "有些社區會限制晚上使用貨梯，有些會要求先鋪設保護或登記搬家公司。若沒有事先確認，車到現場也可能無法進行。",
+          "若是無電梯公寓，也要注意夜間搬重物可能產生聲響。建議避開過晚時段，並提前把物品集中到容易搬出的地方。"
+        ]
+      },
+      {
+        heading: "夜間費用怎麼看",
+        body: [
+          "夜間服務會依時段、距離、物品量、人力安排與社區限制評估。承億搬運會先確認條件再報價，不會只用一句夜間加價帶過。",
+          "若你正在搜尋 {{SERVICE_AREA}} 夜間搬家，可以先傳 LINE 說明希望搬運的時間、兩地條件與物品照片。"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "moving-bags-vs-boxes",
+    title: "搬家袋和紙箱怎麼分配最有效率？",
+    excerpt: "衣物寢具適合打包袋，書籍餐具適合紙箱，分類正確能減少破損。",
+    date: "2026-07-07",
+    image: "/images/moving-bag.jpg",
+    alt: "{{SERVICE_AREA}} 搬家袋與紙箱分配方式",
+    outline: ["軟物用袋", "硬物用箱", "易碎品獨立保護"],
+    sections: [
+      {
+        heading: "軟物用袋",
+        body: [
+          "衣服、棉被、枕頭、毛巾、玩偶、窗簾這類柔軟物品，適合使用大型打包袋。袋子能快速集中，也比較能塞進車內零碎空間。",
+          "但打包袋不適合放易碎品、尖銳物或太重的書籍。袋內物品若重量不平均，搬運時也容易變形。"
+        ]
+      },
+      {
+        heading: "硬物用箱",
+        body: [
+          "書籍、餐具、小電器、工具、清潔用品與文具，適合放入紙箱。紙箱形狀固定，裝車時比較容易堆疊，也較容易標示內容。",
+          "承億搬運的專業紙箱尺寸為 50x35x35cm，適合一般家庭搬家分類使用。建議每箱只裝到能穩定搬起的重量。"
+        ]
+      },
+      {
+        heading: "混用最有效率",
+        body: [
+          "搬家不是只能全用紙箱或全用袋子。最有效率的方式是軟物用袋、硬物用箱、易碎品獨立保護，最後再依房間分類。",
+          "如果不確定要準備多少包材，可以先傳物品照片給承億搬運，估價時一起確認紙箱與打包袋需求。"
+        ]
+      }
+    ]
+  }
+];
+
+export const placeholders = [
+  { priority: "P0", item: "{{DOMAIN_PLACEHOLDER}}", reason: "canonical、sitemap、OG URL 必填" },
+  { priority: "P0", item: "{{FULL_ADDRESS_PLACEHOLDER}}", reason: "LocalBusiness NAP 與頁尾需一致" },
+  { priority: "P0", item: "{{SERVICE_AREA_LIST_PLACEHOLDER}} / {{SERVICE_AREA}}", reason: "首頁、FAQ、Blog 長尾與 areaServed 必填" },
+  { priority: "P0", item: "{{HOURS_PLACEHOLDER}}", reason: "需註明是否 24H 與夜間服務時段" },
+  { priority: "P1", item: "{{GMAPS_DIRECTIONS_URL}}", reason: "導航 CTA 與在地信任訊號" },
+  { priority: "P1", item: "{{LAT}}, {{LNG}}", reason: "可補強地理結構化資料" },
+  { priority: "P1", item: "{{PLACE_ID_PLACEHOLDER}}", reason: "可補強 Google 商家關聯" },
+  { priority: "P1", item: "{{PRICE_RANGE_PLACEHOLDER}}", reason: "可補強 LocalBusiness 價格區間" },
+  { priority: "P2", item: "{{THREADS_URL_PLACEHOLDER}}, {{FB_URL_PLACEHOLDER}}, {{IG_URL_PLACEHOLDER}}", reason: "sameAs 社群連結" },
+  { priority: "P2", item: "{{EMAIL_PLACEHOLDER}}", reason: "非必要，但可補聯絡方式" }
+];
