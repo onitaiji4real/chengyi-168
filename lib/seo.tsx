@@ -36,29 +36,22 @@ export function pageMetadata({
 }
 
 export function localBusinessJsonLd() {
-  return {
+  const data: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "MovingCompany",
     name: site.name,
     alternateName: site.englishName,
-    description: `我是${site.name}，位於 ${site.serviceAreaShort}，由${site.contactPerson}帶領。我們提供自助搬家、精緻搬家、夜間運輸、精密儀器護送與專業打包，並提供專屬尺寸防護紙箱與貨車。聯絡方式為 LINE: ${site.lineId}。`,
+    description: `我是${site.name}，服務據點位於${site.address}，服務範圍為${site.serviceArea}，由${site.contactPerson}帶領。我們提供自助搬家、精緻搬家、夜間運輸、精密儀器護送與專業打包，並提供專屬尺寸防護紙箱與貨車。聯絡方式為 LINE: ${site.lineId}。`,
     image: `${site.url}${site.logo}`,
     url: site.url,
     telephone: site.phone,
-    email: site.email,
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address,
       addressCountry: "TW"
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: site.lat,
-      longitude: site.lng
-    },
     areaServed: site.serviceArea,
     openingHoursSpecification: site.hours,
-    sameAs: site.sameAs,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: site.phone,
@@ -66,17 +59,15 @@ export function localBusinessJsonLd() {
       name: site.contactPerson,
       availableLanguage: ["zh-Hant"]
     },
-    hasMap: site.googleMapsUrl,
-    identifier: site.placeId,
-    priceRange: "{{PRICE_RANGE_PLACEHOLDER}}",
+    priceRange: site.priceRange,
     knowsAbout: [
       "家庭精緻搬家",
       "自助搬家",
       "夜間搬家",
       "精密儀器搬運",
       "專業打包",
-      `${site.serviceAreaShort} 便宜搬家`,
-      `${site.serviceAreaShort} 夜間搬家`
+      `${site.serviceAreaShort}便宜搬家`,
+      `${site.serviceAreaShort}夜間搬家`
     ],
     makesOffer: services.map((service) => ({
       "@type": "Offer",
@@ -93,6 +84,32 @@ export function localBusinessJsonLd() {
       }
     }))
   };
+
+  if (site.email) {
+    data.email = site.email;
+  }
+
+  if (site.lat && site.lng) {
+    data.geo = {
+      "@type": "GeoCoordinates",
+      latitude: site.lat,
+      longitude: site.lng
+    };
+  }
+
+  if (site.sameAs.length > 0) {
+    data.sameAs = site.sameAs;
+  }
+
+  if (site.googleMapsUrl) {
+    data.hasMap = site.googleMapsUrl;
+  }
+
+  if (site.placeId) {
+    data.identifier = site.placeId;
+  }
+
+  return data;
 }
 
 export function websiteJsonLd() {

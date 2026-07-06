@@ -37,6 +37,21 @@ npm run build
 out/
 ```
 
+## Vercel 部署
+
+專案已加入 `vercel.json`：
+
+- Build Command: `npm run build`
+- Output Directory: `out`
+
+目前 `data/site.ts` 的 `site.url` 暫設為：
+
+```text
+https://chengyi-168.vercel.app
+```
+
+如果 Vercel 實際產生不同專案網址，或之後綁定正式網域，請先更新 `site.url`，再重新部署，避免 canonical、Open Graph URL、sitemap 使用錯誤網址。
+
 ## 專案結構
 
 ```text
@@ -111,9 +126,11 @@ JSON-LD 來源在 [lib/seo.tsx](/Users/eric_chen/Documents/Code/chengyi-168/lib/
 
 SEO/GEO 注意事項：
 
-- 目前所有未知在地資料都保留為 `{{PLACEHOLDER}}`，未捏造地址、服務區域、交通或地標。
+- 已回填：地址為高雄市三民區，服務區域為全台灣，營業時間為 24 小時可詢問，實際接單與出車依老闆回覆及排程確認。
+- 已回填：LINE 連結為 `https://line.me/ti/p/vvCZY-FZAM`，Threads 為 `https://www.threads.com/@chengyi773190`。
+- 已回填：價格說明為市區跑市區一車 NT$4,000 起，2 樓以上樓層費每層 NT$500 起，實際仍依線上或現場估價。
 - 替換正式網址後，需重新檢查 canonical、Open Graph URL、`sitemap.xml`。
-- 替換地址、服務區域、營業時間後，需重新檢查 LocalBusiness JSON-LD 與頁尾 NAP 是否一致。
+- Google 商家資料尚未申請，因此 Google Maps、Place ID、座標目前不輸出到 JSON-LD。
 
 ## 圖片與 Logo
 
@@ -175,20 +192,16 @@ SEO/GEO 注意事項：
 
 ## 待回填清單
 
-- P0 `{{DOMAIN_PLACEHOLDER}}`: 正式網址，影響 canonical、sitemap、OG URL
-- P0 `{{FULL_ADDRESS_PLACEHOLDER}}`: 完整地址，影響 NAP 與 LocalBusiness schema
-- P0 `{{SERVICE_AREA_LIST_PLACEHOLDER}} / {{SERVICE_AREA}}`: 服務區域與在地 SEO
-- P0 `{{HOURS_PLACEHOLDER}}`: 營業時間，需註明是否 24H 與夜間服務
+- P0 正式網址確認：目前暫用 `https://chengyi-168.vercel.app`，若 Vercel 實際網址或自訂網域不同需更新
 - P1 `{{GMAPS_DIRECTIONS_URL}}`: Google Maps 導航連結
 - P1 `{{LAT}}, {{LNG}}`: 地理座標
 - P1 `{{PLACE_ID_PLACEHOLDER}}`: Google Place ID
-- P1 `{{PRICE_RANGE_PLACEHOLDER}}`: 價格區間，可補強 LocalBusiness schema
-- P2 `{{THREADS_URL_PLACEHOLDER}}, {{FB_URL_PLACEHOLDER}}, {{IG_URL_PLACEHOLDER}}`: 社群 sameAs
+- P2 `{{FB_URL_PLACEHOLDER}}, {{IG_URL_PLACEHOLDER}}`: 社群 sameAs
 - P2 `{{EMAIL_PLACEHOLDER}}`: Email，可選
 
 ## 目前已知未完成
 
-- 尚未把 placeholder 換成真實商家資料。
+- 已回填第一批客戶資料；仍缺正式網址、Google 商家資料、FB/IG 與 Email。
 - 已完成基本 headless 截圖驗收；尚未做實機手機瀏覽器 QA。
 - `npm audit --omit=dev` 曾回報 Next.js 依賴的 PostCSS moderate advisory；npm 建議修復會降級到舊版 Next，未採用。
 

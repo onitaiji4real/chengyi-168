@@ -22,6 +22,9 @@ export default function ServicesPage() {
             <p className="lede mt-5 max-w-3xl">
               從小量自助搬運到完整精緻搬家，承億搬運會依照現場條件、物品尺寸、搬運距離與服務時段，先溝通再安排。
             </p>
+            <p className="lede mt-4 max-w-3xl">
+              我們以高雄市三民區為服務據點，基本不限制縣市，全台搬運需求都可先透過 LINE 傳照片討論。
+            </p>
           </div>
           <div className="relative mx-auto aspect-[655/1074] w-full max-w-[320px] overflow-hidden rounded-lg bg-white/10 shadow-2xl shadow-slate-950/30 ring-1 ring-white/15">
             <Image

@@ -227,22 +227,18 @@
 
 以下項目未完成是因為原始資料未提供，已依要求保留 placeholder，未自行捏造：
 
-- P0 `{{DOMAIN_PLACEHOLDER}}`: 正式網址，影響 canonical、OG URL、sitemap。
-- P0 `{{FULL_ADDRESS_PLACEHOLDER}}`: 完整地址，影響 LocalBusiness NAP。
-- P0 `{{SERVICE_AREA_LIST_PLACEHOLDER}}`: 完整服務區域，影響頁尾、schema、內容策略。
-- P0 `{{SERVICE_AREA}}`: 主要在地長尾關鍵字區域。
-- P0 `{{HOURS_PLACEHOLDER}}`: 營業時間，需註明是否 24H 與夜間服務規則。
+- P0 正式網址確認：目前暫用 `https://chengyi-168.vercel.app`，若 Vercel 實際網址或自訂網域不同需更新 `data/site.ts` 的 `site.url`。
 - P1 `{{GMAPS_DIRECTIONS_URL}}`: Google Maps 導航連結。
 - P1 `{{LAT}}`, `{{LNG}}`: 地理座標。
 - P1 `{{PLACE_ID_PLACEHOLDER}}`: Google Place ID。
-- P2 `{{THREADS_URL_PLACEHOLDER}}`: Threads 連結。
 - P2 `{{FB_URL_PLACEHOLDER}}`: Facebook 連結。
 - P2 `{{IG_URL_PLACEHOLDER}}`: Instagram 連結。
 - P2 `{{EMAIL_PLACEHOLDER}}`: Email，可選。
-- P1 `{{PRICE_RANGE_PLACEHOLDER}}`: 價格區間，可補強 LocalBusiness schema。
 - 已完成：Chrome headless 基本截圖驗收。正式上線前仍建議用真機 Safari/Chrome 再抽查一次。
 - 尚未完成：替換 placeholder 為真實商家資料後，需再次跑 build 並抽查 sitemap、canonical、JSON-LD。
-- 回填前請先使用 `docs/client-questionnaire.md` 向客戶確認地址、服務區域、營業時間、Google Maps、計價、社群與評價資料。
+- 已回填第一批客戶資料：地址、服務區域、營業時間、LINE 連結、Threads、計價說明、樓層費、包材防護說明。
+- Google 商家資料尚未申請，因此 Google Maps、Place ID、座標目前仍缺，且不輸出到 JSON-LD。
+- 後續回填前請先使用 `docs/client-questionnaire.md` 向客戶確認正式網址、Google Maps、FB/IG、Email 與評價資料。
 
 ## 驗證紀錄
 
@@ -318,6 +314,21 @@ npm audit --omit=dev
 
 - 依使用者要求持續更新交接文件與 README。
 - 新增 `docs/client-questionnaire.md`，整理可直接詢問客戶的 placeholder 回填問題。
+- 回填第一批客戶資料：
+  - 網站網址暫設：`https://chengyi-168.vercel.app`，用於 Vercel 部署前的 canonical、OG URL 與 sitemap。
+  - 地址：高雄市三民區。
+  - 服務區域：全台灣。
+  - 營業時間：24 小時可 LINE 或電話詢問，實際接單與出車依老闆回覆及排程確認。
+  - LINE 連結：`https://line.me/ti/p/vvCZY-FZAM`。
+  - Threads：`https://www.threads.com/@chengyi773190`。
+  - 價格：市區跑市區一車 NT$4,000 起；2 樓以上樓層費每層 NT$500 起；大型家具另估。
+  - 包材：需要保護的物品可視情況提供氣泡紙、專業搬家保護毯、膠膜與保護材料。
+- 調整 JSON-LD 輸出：
+  - Email、Google Maps、Place ID、座標沒有資料時不輸出空欄位。
+  - `priceRange` 改用客戶提供的價格說明。
+- 新增 `vercel.json`：
+  - `buildCommand`: `npm run build`
+  - `outputDirectory`: `out`
 - 修正首頁深藍 CTA 對比不足問題：
   - 新增 `.btn-dark` 共用樣式，明確指定深藍底與白色文字。
   - 將「查看完整服務」與「查看完整 FAQ」改用 `.btn-dark`，避免深色文字壓在深色背景上。
@@ -335,3 +346,4 @@ npm audit --omit=dev
   - 已執行 `npm run build`，成功。
   - 截圖確認主要文字、圖片、CTA 沒有明顯破版或低對比問題。
   - 修正 CTA 對比後再次執行 `npm run build`，成功。
+  - 回填第一批客戶資料後再次執行 `npm run build`，成功。

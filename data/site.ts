@@ -1,27 +1,26 @@
 export const site = {
-  url: "https://{{DOMAIN_PLACEHOLDER}}",
+  url: "https://chengyi-168.vercel.app",
   name: "承億搬運",
   englishName: "Cheng-Yi Relocation Services",
   category: "搬家公司",
   slogan: "承載所託 | 億心送達",
   phone: "0965-819-629",
   contactPerson: "汪承漢",
-  email: "{{EMAIL_PLACEHOLDER}}",
+  email: "",
   lineId: "chengyi-168",
-  lineUrl: "https://line.me/ti/p/chengyi-168",
-  address: "{{FULL_ADDRESS_PLACEHOLDER}}",
-  hours: "{{HOURS_PLACEHOLDER}}",
-  serviceArea: "{{SERVICE_AREA_LIST_PLACEHOLDER}}",
-  serviceAreaShort: "{{SERVICE_AREA}}",
-  lat: "{{LAT}}",
-  lng: "{{LNG}}",
-  placeId: "{{PLACE_ID_PLACEHOLDER}}",
-  googleMapsUrl: "{{GMAPS_DIRECTIONS_URL}}",
+  lineUrl: "https://line.me/ti/p/vvCZY-FZAM",
+  address: "高雄市三民區",
+  hours: "24 小時可 LINE 或電話詢問，實際接單與出車依老闆回覆及排程確認；夜間搬家需提前溝通。",
+  serviceArea: "全台灣",
+  serviceAreaShort: "全台",
+  lat: "",
+  lng: "",
+  placeId: "",
+  googleMapsUrl: "",
   sameAs: [
-    "{{THREADS_URL_PLACEHOLDER}}",
-    "{{FB_URL_PLACEHOLDER}}",
-    "{{IG_URL_PLACEHOLDER}}"
+    "https://www.threads.com/@chengyi773190"
   ],
+  priceRange: "市區跑市區一車 NT$4,000 起；2 樓以上樓層費每層 NT$500 起；實際價格依線上或現場估價確認。",
   logo: "/images/logo-mark.jpg",
   brandCard: "/images/brand-card.jpg",
   heroImage: "/images/truck-capacity.jpg",
@@ -37,21 +36,21 @@ export const site = {
       spec: "長 285 x 寬 169 x 高 115 cm",
       description: "車體空間透明化，估價前就能理解可承載量與裝載方式。",
       image: "/images/truck-capacity.jpg",
-      alt: "{{SERVICE_AREA}} 承億搬運升降尾門貨車容量實拍"
+      alt: "全台承億搬運升降尾門貨車容量實拍"
     },
     {
       title: "專業紙箱",
       spec: "50 x 35 x 35 cm",
       description: "適合書籍、餐具、日用品等常見家用品分類打包。",
       image: "/images/packing-box.jpg",
-      alt: "{{SERVICE_AREA}} 承億搬運專業紙箱實拍"
+      alt: "全台承億搬運專業紙箱實拍"
     },
     {
       title: "大型打包袋",
       spec: "50 x 65 cm",
       description: "衣物、寢具與柔軟物品可快速集中，搬運更俐落。",
       image: "/images/moving-bag.jpg",
-      alt: "{{SERVICE_AREA}} 承億搬運大型打包袋實拍"
+      alt: "全台承億搬運大型打包袋實拍"
     }
   ]
 };
@@ -109,17 +108,17 @@ export const faqs = [
   {
     question: "承億搬運如何計費？以車計價還是包價？",
     answer:
-      "會先依物品量、搬運距離、樓層、電梯與特殊物件評估。可依需求討論包價或車趟方式，確認後再出車，避免現場資訊落差。"
+      "通常採線上估價或現場估價，會依車趟、物品量、距離、樓層與特殊大型家具評估。市區跑市區一車約 NT$4,000 起，實際價格建議直接和老闆本人討論。"
   },
   {
     question: "會提供紙箱或打包袋嗎？",
     answer:
-      "可提供 50x35x35cm 專業紙箱與 50x65cm 大型打包袋。建議先透過 LINE 告知物品類型與數量，方便準備合適包材。"
+      "可提供 50x35x35cm 專業紙箱與 50x65cm 大型打包袋。需要防護的物品也可視情況提供氣泡紙、專業搬家保護毯、膠膜與保護材料。"
   },
   {
     question: "沒有電梯的公寓怎麼算？",
     answer:
-      "無電梯會依樓層、搬運距離、物品重量與是否需要加派人力評估。估價時請提供起點與終點樓層，價格會先說明清楚。"
+      "2 樓以上會依樓層另計，原則上每層 NT$500 起。實際仍會看物品重量、搬運距離、樓梯動線與是否需要加派人力。"
   },
   {
     question: "大型廢棄物可以幫忙丟嗎？",
@@ -129,15 +128,15 @@ export const faqs = [
   {
     question: "夜間搬家會加價嗎？",
     answer:
-      "夜間運輸會依時段、距離、社區限制與人力安排評估。承億搬運會先報價確認，適合無法白天搬家或需避開尖峰的人。"
+      "夜間搬家需先透過 LINE 或電話確認老闆排程，24 小時都可詢問，但實際出車要依回覆與現場條件安排。是否加價會依時段、距離、社區限制與人力評估。"
   },
   {
-    question: "{{SERVICE_AREA}} 便宜搬家怎麼預約？",
+    question: "全台便宜搬家怎麼預約？",
     answer:
-      "最有效的方式是透過 LINE 傳物品照片、兩地地址條件與期望日期。物品不多者可詢問自助搬家，通常能更精準控制預算。"
+      "最有效的方式是透過 LINE 傳物品照片、兩地地址條件與期望日期。學生或預算較困難的朋友可以直接說明狀況，老闆會盡量協助討論合適方案。"
   },
   {
-    question: "{{SERVICE_AREA}} 夜間搬家適合哪些人？",
+    question: "全台夜間搬家適合哪些人？",
     answer:
       "適合白天上班、店面營業、社區有指定搬運時段，或希望避開交通尖峰的人。預約前需確認管理規約與可搬運時間。"
   },
@@ -151,11 +150,11 @@ export const faqs = [
 export const blogPosts = [
   {
     slug: "declutter-packing-method",
-    title: "{{SERVICE_AREA}} 搬家前斷捨離打包心法",
+    title: "全台搬家前斷捨離打包心法",
     excerpt: "搬家前先分類留用、捐贈、回收與丟棄，能有效降低箱數與搬運成本。",
     date: "2026-07-07",
     image: "/images/moving-bag.jpg",
-    alt: "{{SERVICE_AREA}} 搬家前使用大型打包袋分類物品",
+    alt: "全台搬家前使用大型打包袋分類物品",
     outline: ["先從半年沒用的物品開始", "重物小箱、輕物大袋", "搬家前一天保留隨身箱"],
     sections: [
       {
@@ -176,7 +175,7 @@ export const blogPosts = [
         heading: "保留隨身箱",
         body: [
           "搬家前一天請另外準備一箱或一袋隨身物品，放入證件、藥品、充電器、鑰匙、簡單盥洗用品、隔天要穿的衣物。這個箱子不要交給搬運人員堆到車內深處，最好由自己保管。",
-          "若你正在規劃 {{SERVICE_AREA}} 搬家，先把物品減量與分類做好，後續估價、裝車與定位都會更順。"
+          "若你正在規劃全台搬家，先把物品減量與分類做好，後續估價、裝車與定位都會更順。"
         ]
       }
     ]
@@ -187,7 +186,7 @@ export const blogPosts = [
     excerpt: "從電梯保護、貴重物品到鑰匙交接，搬家當天照清單走更穩。",
     date: "2026-07-07",
     image: "/images/truck-capacity.jpg",
-    alt: "{{SERVICE_AREA}} 搬家當天升降尾門貨車裝載前檢查",
+    alt: "全台搬家當天升降尾門貨車裝載前檢查",
     outline: ["確認社區搬運時段", "貴重物品自行保管", "終點先規劃家具定位"],
     sections: [
       {
@@ -226,7 +225,7 @@ export const blogPosts = [
     excerpt: "紙箱不是越滿越好，重量分配、防晃與封箱方式都會影響搬運安全。",
     date: "2026-07-07",
     image: "/images/packing-box.jpg",
-    alt: "{{SERVICE_AREA}} 搬家紙箱打包與尺寸實拍",
+    alt: "全台搬家紙箱打包與尺寸實拍",
     outline: ["書籍分散裝箱", "易碎品加緩衝", "箱外標示房間與內容"],
     sections: [
       {
@@ -254,18 +253,18 @@ export const blogPosts = [
   },
   {
     slug: "cheap-moving-service-area",
-    title: "{{SERVICE_AREA}} 便宜搬家怎麼省預算？",
+    title: "全台便宜搬家怎麼省預算？",
     excerpt: "物品量、搬運樓層與是否自助打包，是影響搬家費用的主要因素。",
     date: "2026-07-07",
     image: "/images/truck-capacity.jpg",
-    alt: "{{SERVICE_AREA}} 便宜搬家貨車空間估算",
+    alt: "全台便宜搬家貨車空間估算",
     outline: ["先減少不必要物品", "集中打包降低等待", "自助搬家適合小量物品"],
     sections: [
       {
         heading: "別只看單一報價",
         body: [
           "搬家費用通常與物品量、搬運距離、樓層、有無電梯、停車距離、特殊大型物件與時段有關。只比較單一價格，容易忽略現場追加條件。",
-          "想在 {{SERVICE_AREA}} 找便宜搬家，最重要的是先把資訊講清楚。照片、兩地樓層、電梯、停車位置與預計日期都提供，報價才不容易失準。"
+          "想在全台找便宜搬家，最重要的是先把資訊講清楚。照片、兩地樓層、電梯、停車位置與預計日期都提供，報價才不容易失準。"
         ]
       },
       {
@@ -286,11 +285,11 @@ export const blogPosts = [
   },
   {
     slug: "night-moving-service-area",
-    title: "{{SERVICE_AREA}} 夜間搬家預約注意事項",
+    title: "全台夜間搬家預約注意事項",
     excerpt: "夜間搬家要先確認社區規範、噪音限制與可使用電梯時間。",
     date: "2026-07-07",
     image: "/images/services-overview.jpg",
-    alt: "{{SERVICE_AREA}} 夜間搬家服務預約說明",
+    alt: "全台夜間搬家服務預約說明",
     outline: ["先問管理室", "避開安靜時段", "提前整理搬運動線"],
     sections: [
       {
@@ -311,7 +310,7 @@ export const blogPosts = [
         heading: "夜間費用怎麼看",
         body: [
           "夜間服務會依時段、距離、物品量、人力安排與社區限制評估。承億搬運會先確認條件再報價，不會只用一句夜間加價帶過。",
-          "若你正在搜尋 {{SERVICE_AREA}} 夜間搬家，可以先傳 LINE 說明希望搬運的時間、兩地條件與物品照片。"
+          "若你正在搜尋全台夜間搬家，可以先傳 LINE 說明希望搬運的時間、兩地條件與物品照片。"
         ]
       }
     ]
@@ -322,7 +321,7 @@ export const blogPosts = [
     excerpt: "衣物寢具適合打包袋，書籍餐具適合紙箱，分類正確能減少破損。",
     date: "2026-07-07",
     image: "/images/moving-bag.jpg",
-    alt: "{{SERVICE_AREA}} 搬家袋與紙箱分配方式",
+    alt: "全台搬家袋與紙箱分配方式",
     outline: ["軟物用袋", "硬物用箱", "易碎品獨立保護"],
     sections: [
       {
@@ -351,14 +350,10 @@ export const blogPosts = [
 ];
 
 export const placeholders = [
-  { priority: "P0", item: "{{DOMAIN_PLACEHOLDER}}", reason: "canonical、sitemap、OG URL 必填" },
-  { priority: "P0", item: "{{FULL_ADDRESS_PLACEHOLDER}}", reason: "LocalBusiness NAP 與頁尾需一致" },
-  { priority: "P0", item: "{{SERVICE_AREA_LIST_PLACEHOLDER}} / {{SERVICE_AREA}}", reason: "首頁、FAQ、Blog 長尾與 areaServed 必填" },
-  { priority: "P0", item: "{{HOURS_PLACEHOLDER}}", reason: "需註明是否 24H 與夜間服務時段" },
+  { priority: "P0", item: "正式網址確認", reason: "目前暫用 https://chengyi-168.vercel.app，若 Vercel 實際網址或自訂網域不同需更新" },
   { priority: "P1", item: "{{GMAPS_DIRECTIONS_URL}}", reason: "導航 CTA 與在地信任訊號" },
   { priority: "P1", item: "{{LAT}}, {{LNG}}", reason: "可補強地理結構化資料" },
   { priority: "P1", item: "{{PLACE_ID_PLACEHOLDER}}", reason: "可補強 Google 商家關聯" },
-  { priority: "P1", item: "{{PRICE_RANGE_PLACEHOLDER}}", reason: "可補強 LocalBusiness 價格區間" },
-  { priority: "P2", item: "{{THREADS_URL_PLACEHOLDER}}, {{FB_URL_PLACEHOLDER}}, {{IG_URL_PLACEHOLDER}}", reason: "sameAs 社群連結" },
+  { priority: "P2", item: "{{FB_URL_PLACEHOLDER}}, {{IG_URL_PLACEHOLDER}}", reason: "sameAs 社群連結" },
   { priority: "P2", item: "{{EMAIL_PLACEHOLDER}}", reason: "非必要，但可補聯絡方式" }
 ];

@@ -31,7 +31,7 @@ export default function HomePage() {
             </h1>
             <p className="lede mt-6 max-w-2xl font-medium text-blue-50">
               <span className="block">Threads 網友好評推薦！</span>
-              <span className="block">大高雄地區最安心的搬家神隊友。</span>
+              <span className="block">高雄三民出發，全台搬運都可討論。</span>
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <TrackingLink href={site.lineUrl} event="click_line_hero" className="btn btn-primary w-full sm:w-auto">
@@ -59,12 +59,12 @@ export default function HomePage() {
         <div className="container grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <p className="eyebrow">ABOUT / ENTITY</p>
-            <h2 className="section-title mt-3">我是承億搬運，位於 {site.serviceAreaShort}</h2>
+            <h2 className="section-title mt-3">我是承億搬運，據點位於 {site.address}</h2>
             <p className="text-muted mt-5 leading-8">
               由{site.contactPerson}帶領。我們提供自助搬家、精緻搬家與專業打包，並提供專屬尺寸防護紙箱與貨車。聯絡方式為 LINE: {site.lineId}。
             </p>
             <p className="text-muted mt-4 leading-8">
-              我們深耕 {site.serviceAreaShort}，無論是無電梯公寓還是高級社區大樓，都會先確認搬運動線、物品尺寸與現場限制，再給出清楚建議。
+              我們提供 {site.serviceArea} 搬運服務，無論是無電梯公寓還是高級社區大樓，都會先確認搬運動線、物品尺寸與現場限制，再給出清楚建議。
             </p>
           </div>
           <div className="card grid gap-4 p-4 sm:grid-cols-3">

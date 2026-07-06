@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         url: site.heroImage,
         width: 1200,
         height: 675,
-        alt: "{{SERVICE_AREA}} 承億搬運升降尾門貨車搬家服務"
+        alt: "全台承億搬運升降尾門貨車搬家服務"
       }
     ]
   },
