@@ -39,10 +39,8 @@ out/
 
 ## Vercel 部署
 
-專案已加入 `vercel.json`：
-
-- Build Command: `npm run build`
-- Output Directory: `out`
+本專案支援 Vercel 零設定部署（Zero-Config Deployment）：
+Vercel 會自動偵測 Next.js 並讀取 `next.config.ts` 中的 `output: "export"` 來處理靜態輸出，不需額外的 `vercel.json`，否則可能導致部署時在 `Finalizing page optimization` 階段卡住。
 
 目前 `data/site.ts` 的 `site.url` 暫設為：
 
