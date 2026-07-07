@@ -69,7 +69,8 @@ lib/
   seo.tsx               metadata helper 與 JSON-LD helper
 public/
   images/
-    brand-logo.jpg         新版完整品牌 logo，Header / Hero / schema 使用
+    brand-logo.jpg         新版完整品牌 logo，Hero / schema 使用
+    brand-logo-mark.jpg    新版方形品牌標誌，Header 使用
     logo-mark.jpg          舊版裁切 logo，保留備用
     brand-card.jpg         名片聯絡視覺
     services-overview.jpg  五大服務總覽圖
@@ -130,7 +131,8 @@ SEO/GEO 注意事項：
 
 目前主要使用專案內 JPG：
 
-- Header logo / 首頁 hero / schema logo: `public/images/brand-logo.jpg`
+- Header 方形 logo: `public/images/brand-logo-mark.jpg`
+- 首頁 Hero / schema logo: `public/images/brand-logo.jpg`
 - Footer 名片圖: `public/images/brand-card.jpg`
 - 貨車容量展示: `public/images/truck-capacity.jpg`
 - 紙箱展示: `public/images/packing-box.jpg`

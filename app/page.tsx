@@ -11,17 +11,9 @@ export default function HomePage() {
       <JsonLd data={websiteJsonLd()} />
       <JsonLd data={faqJsonLd()} />
       <section className="relative min-h-[calc(100svh-64px)] overflow-hidden bg-slate-950 text-white">
-        <Image
-          src={site.heroImage}
-          alt={`${site.serviceAreaShort} ${site.name}搬家服務品牌標誌`}
-          fill
-          priority
-          className="hero-media object-contain opacity-20"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/72" />
-        <div className="container relative flex min-h-[calc(100svh-64px)] items-center py-16">
-          <div className="max-w-3xl reveal">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_36%,rgba(250,204,21,0.12),transparent_18rem),linear-gradient(135deg,#020617_0%,#050816_52%,#0f172a_100%)]" />
+        <div className="container relative grid min-h-[calc(100svh-64px)] items-center gap-10 pb-36 pt-8 sm:py-12 lg:grid-cols-[0.92fr_1.08fr] lg:py-16">
+          <div className="order-2 max-w-3xl reveal lg:order-1">
             <p className="mb-4 inline-flex rounded-full bg-white/12 px-4 py-2 text-sm font-bold text-yellow-100 ring-1 ring-white/20">
               Threads 網友好評推薦
             </p>
@@ -33,13 +25,27 @@ export default function HomePage() {
               <span className="block">Threads 網友好評推薦！</span>
               <span className="block">高雄三民出發，全台搬運都可討論。</span>
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex w-full max-w-sm flex-col gap-3 sm:max-w-none sm:flex-row">
               <TrackingLink href={site.lineUrl} event="click_line_hero" className="btn btn-primary w-full sm:w-auto">
                 立即加 LINE 估價
               </TrackingLink>
               <TrackingLink href="/services/" event="view_services" className="btn btn-secondary w-full sm:w-auto">
                 了解五大搬運服務
               </TrackingLink>
+            </div>
+          </div>
+          <div className="order-1 flex justify-center lg:order-2">
+            <div className="relative aspect-square w-full max-w-[220px] overflow-hidden rounded-[28px] bg-white shadow-2xl shadow-black/45 ring-1 ring-white/20 sm:max-w-[340px] lg:max-w-[520px]">
+              <div className="absolute inset-4 sm:inset-8 lg:inset-10">
+                <Image
+                  src={site.heroImage}
+                  alt={`${site.serviceAreaShort} ${site.name}搬家服務品牌標誌`}
+                  fill
+                  priority
+                  className="object-contain"
+                  sizes="(min-width: 1024px) 520px, (min-width: 640px) 340px, 220px"
+                />
+              </div>
             </div>
           </div>
         </div>

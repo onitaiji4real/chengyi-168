@@ -375,3 +375,14 @@ npm audit --omit=dev
   - Header logo 改用 `brand-logo.jpg`，不再依賴舊裁切圖 `logo-mark.jpg`。
   - 首頁 hero 背景由貨車圖改為 `brand-logo.jpg`，並以低透明度顯示，避免影響標題與 CTA 可讀性。
   - Metadata / JSON-LD 使用新版 logo。
+
+### 2026-07-08 第六輪
+
+- 依使用者回饋調整新版 logo 呈現方式：
+  - 新增 `public/images/brand-logo-mark.jpg`，由 `56146.jpg` 裁出方形盾牌標誌。
+  - Header logo 改用方形標誌並以圓形白底呈現，避免完整長方形 logo 擠壓導覽列。
+  - 首頁 hero 不再把 logo 壓暗作為背景浮水印，改為置中的白底品牌區塊，讓完整 logo 保持清楚可讀。
+  - 保留暗色調首頁氛圍，白底 logo 區塊負責承接品牌辨識與視覺對比。
+- 驗證：
+  - 已執行 `npm run build`，成功。
+  - 已用 Chrome headless 截圖抽查桌面與手機首頁，確認 logo、標題與 CTA 未重疊。

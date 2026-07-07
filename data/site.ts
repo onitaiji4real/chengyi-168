@@ -22,6 +22,7 @@ export const site = {
   ],
   priceRange: "市區跑市區一車 NT$4,000 起；2 樓以上樓層費每層 NT$500 起；實際價格依線上或現場估價確認。",
   logo: "/images/brand-logo.jpg",
+  logoMark: "/images/brand-logo-mark.jpg",
   brandCard: "/images/brand-card.jpg",
   heroImage: "/images/brand-logo.jpg",
   trustSignals: [
