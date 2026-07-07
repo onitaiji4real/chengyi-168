@@ -386,3 +386,10 @@ npm audit --omit=dev
 - 驗證：
   - 已執行 `npm run build`，成功。
   - 已用 Chrome headless 截圖抽查桌面與手機首頁，確認 logo、標題與 CTA 未重疊。
+
+### 2026-07-08 第七輪
+
+- 依 Vercel 部署 log 修正部署設定：
+  - Vercel build 已成功完成 Next.js 編譯與 SSG，但部署階段仍尋找 `out/`。
+  - 新增 `vercel.json`，明確設定 `framework: "nextjs"`、`buildCommand: "npm run build"`、`outputDirectory: ".next"`。
+  - README 補充：若 Vercel UI 仍顯示 `The Next.js output directory "out" was not found`，需到 Project Settings -> Build and Output Settings 將 Output Directory 清空或改為 `.next`。

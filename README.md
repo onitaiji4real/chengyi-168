@@ -34,8 +34,10 @@ npm run build
 
 ## Vercel 部署
 
-本專案支援 Vercel 零設定部署（Zero-Config Deployment）：
-Vercel 會自動偵測 Next.js 並將沒有動態伺服器渲染的頁面做靜態優化 (SSG)。不需額外的 `vercel.json` 或設定 `output: "export"`，這可以避免 Vercel 在某些情況下卡在 `Finalizing page optimization`。
+本專案採 Vercel 原生 Next.js 部署：
+Vercel 會自動偵測 Next.js 並將沒有動態伺服器渲染的頁面做靜態優化 (SSG)。專案內保留 `vercel.json`，明確指定 `framework: "nextjs"` 與 `outputDirectory: ".next"`，避免 Vercel 專案舊設定仍然尋找 `out/`。
+
+若 Vercel 部署錯誤顯示 `The Next.js output directory "out" was not found`，請到 Vercel Project Settings -> Build and Output Settings，將 Output Directory 清空或改為 `.next`，並確認沒有使用 `output: "export"`。
 
 目前 `data/site.ts` 的 `site.url` 暫設為：
 
