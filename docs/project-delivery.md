@@ -158,8 +158,9 @@
   - Footer NAP
   - 固定 LINE CTA
 - 已產出 hero 圖片並放入 `public/images/hero-moving-truck.png`。
-- 已改用實拍貨車容量圖作為首頁 hero：`public/images/truck-capacity.jpg`。
+- 已依使用者最新素材將首頁 hero 改用新版完整 logo：`public/images/brand-logo.jpg`。
 - 已新增並使用實拍素材：
+  - `public/images/brand-logo.jpg`
   - `public/images/logo-mark.jpg`
   - `public/images/brand-card.jpg`
   - `public/images/services-overview.jpg`
@@ -167,6 +168,7 @@
   - `public/images/packing-box.jpg`
   - `public/images/moving-bag.jpg`
 - 已將 header logo 從文字圓章改成實際品牌 logo 圖。
+- 已將 header logo 從舊裁切圖改為新版完整 logo 圖。
 - 已將裝備展示區改成實拍圖卡：
   - 升降尾門貨車容量
   - 專業紙箱
@@ -365,3 +367,11 @@ npm audit --omit=dev
   - 不使用 `vercel.json` 指定 `out/`。
 - 驗證：
   - 已執行 `npm run build`，成功。
+
+### 2026-07-08 第五輪
+
+- 依使用者新增素材 `56146.jpg` 更新品牌視覺：
+  - 產生裁切版 `public/images/brand-logo.jpg`。
+  - Header logo 改用 `brand-logo.jpg`，不再依賴舊裁切圖 `logo-mark.jpg`。
+  - 首頁 hero 背景由貨車圖改為 `brand-logo.jpg`，並以低透明度顯示，避免影響標題與 CTA 可讀性。
+  - Metadata / JSON-LD 使用新版 logo。

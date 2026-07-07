@@ -13,13 +13,13 @@ export default function HomePage() {
       <section className="relative min-h-[calc(100svh-64px)] overflow-hidden bg-slate-950 text-white">
         <Image
           src={site.heroImage}
-          alt={`${site.serviceAreaShort} ${site.name}搬家服務貨車、紙箱與打包袋`}
+          alt={`${site.serviceAreaShort} ${site.name}搬家服務品牌標誌`}
           fill
           priority
-          className="hero-media object-cover"
+          className="hero-media object-contain opacity-20"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/82 to-slate-950/34" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/72" />
         <div className="container relative flex min-h-[calc(100svh-64px)] items-center py-16">
           <div className="max-w-3xl reveal">
             <p className="mb-4 inline-flex rounded-full bg-white/12 px-4 py-2 text-sm font-bold text-yellow-100 ring-1 ring-white/20">

@@ -69,10 +69,11 @@ lib/
   seo.tsx               metadata helper 與 JSON-LD helper
 public/
   images/
-    logo-mark.jpg          Header 與 schema logo
+    brand-logo.jpg         新版完整品牌 logo，Header / Hero / schema 使用
+    logo-mark.jpg          舊版裁切 logo，保留備用
     brand-card.jpg         名片聯絡視覺
     services-overview.jpg  五大服務總覽圖
-    truck-capacity.jpg     貨車容量與首頁 hero
+    truck-capacity.jpg     貨車容量與 Blog / 裝備展示
     packing-box.jpg        紙箱實拍
     moving-bag.jpg         大型打包袋實拍
     hero-moving-truck.png  早期生成圖，目前未作為主要 hero
@@ -127,16 +128,16 @@ SEO/GEO 注意事項：
 
 ## 圖片與 Logo
 
-目前主要使用專案內實拍 JPG：
+目前主要使用專案內 JPG：
 
-- Header logo: `public/images/logo-mark.jpg`
+- Header logo / 首頁 hero / schema logo: `public/images/brand-logo.jpg`
 - Footer 名片圖: `public/images/brand-card.jpg`
-- 首頁 hero / 貨車容量: `public/images/truck-capacity.jpg`
+- 貨車容量展示: `public/images/truck-capacity.jpg`
 - 紙箱展示: `public/images/packing-box.jpg`
 - 打包袋展示: `public/images/moving-bag.jpg`
 - 服務頁總覽: `public/images/services-overview.jpg`
 
-原始 JPG 仍保留在專案根目錄：`71.jpg`, `72.jpg`, `1587.jpg`, `1588.jpg`, `4630.jpg`。
+原始 JPG 仍保留在專案根目錄：`71.jpg`, `72.jpg`, `1587.jpg`, `1588.jpg`, `4630.jpg`, `56146.jpg`。
 
 ## Blog 內容
 

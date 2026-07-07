@@ -13,13 +13,13 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 max-w-[100vw] overflow-hidden border-b border-white/10 bg-slate-950/92 text-white backdrop-blur">
       <div className="container flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex min-w-0 items-center gap-2 font-black text-white" aria-label={`${site.name}首頁`}>
-          <span className="relative h-10 w-12 shrink-0 overflow-hidden rounded sm:h-11 sm:w-14">
+          <span className="relative h-10 w-20 shrink-0 overflow-hidden rounded bg-white sm:h-11 sm:w-24">
             <Image
               src={site.logo}
               alt={`${site.name} logo`}
               fill
               className="object-contain"
-              sizes="56px"
+              sizes="96px"
               priority
             />
           </span>
