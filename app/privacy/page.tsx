@@ -10,7 +10,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function PrivacyPage() {
   return (
-    <main className="section bg-white">
+    <main className="section">
       <div className="container max-w-3xl">
         <h1 className="page-title">隱私權政策</h1>
         <div className="text-muted mt-8 space-y-6 leading-8">

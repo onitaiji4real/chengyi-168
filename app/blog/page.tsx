@@ -21,7 +21,7 @@ export default function BlogPage() {
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}/`} className="card block">
-                <div className="relative aspect-[4/3] bg-slate-200">
+                <div className="relative aspect-[4/3] bg-slate-800">
                   <Image
                     src={post.image}
                     alt={post.alt}
@@ -31,10 +31,10 @@ export default function BlogPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <p className="text-sm font-bold text-slate-500">{post.date}</p>
+                  <p className="text-sm font-bold text-slate-400">{post.date}</p>
                   <h2 className="mt-3 text-2xl font-black">{post.title}</h2>
                   <p className="text-muted mt-3 leading-7">{post.excerpt}</p>
-                  <span className="mt-5 inline-flex font-black text-[var(--primary)]">閱讀完整文章</span>
+                  <span className="mt-5 inline-flex font-black text-[var(--accent)]">閱讀完整文章</span>
                 </div>
               </Link>
             ))}

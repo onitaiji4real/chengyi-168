@@ -54,12 +54,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <main>
       <JsonLd data={localBusinessJsonLd()} />
       <JsonLd data={blogPostingJsonLd(post)} />
-      <article className="section bg-white">
+      <article className="section">
         <div className="container max-w-3xl">
           <p className="eyebrow">{post.date}</p>
           <h1 className="page-title mt-3 break-all whitespace-normal">{post.title}</h1>
           <p className="lede text-muted mt-5">{post.excerpt}</p>
-          <div className="relative mt-8 aspect-[16/10] overflow-hidden rounded-lg bg-slate-200 shadow-2xl shadow-slate-900/10">
+          <div className="relative mt-8 aspect-[16/10] overflow-hidden rounded-lg bg-slate-800 shadow-2xl shadow-black/30">
             <Image
               src={post.image}
               alt={post.alt}
@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <h2 className="card-title">文章大綱</h2>
             <ol className="mt-5 grid gap-4">
               {post.outline.map((item, index) => (
-                <li key={item} className="rounded-lg bg-slate-50 p-4 font-bold">
+                <li key={item} className="rounded-lg bg-[var(--card-soft)] p-4 font-bold">
                   {index + 1}. {item}
                 </li>
               ))}
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
             ))}
           </section>
-          <section className="card mt-12 bg-slate-50 p-6">
+          <section className="card mt-12 bg-[var(--card-soft)] p-6">
             <h2 className="card-title break-all whitespace-normal">需要估價時，先準備這些資訊</h2>
             <ul className="text-muted mt-5 grid gap-3 leading-7">
               <li>起點與終點地址條件、樓層、有無電梯。</li>

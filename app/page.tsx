@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/82 to-slate-950/34" />
         <div className="container relative flex min-h-[calc(100svh-64px)] items-center py-16">
           <div className="max-w-3xl reveal">
-            <p className="mb-4 inline-flex rounded-full bg-white/14 px-4 py-2 text-sm font-bold text-yellow-100 ring-1 ring-white/20">
+            <p className="mb-4 inline-flex rounded-full bg-white/12 px-4 py-2 text-sm font-bold text-yellow-100 ring-1 ring-white/20">
               Threads 網友好評推薦
             </p>
             <h1 className="display-title">
@@ -45,10 +45,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-5">
+      <section className="border-y border-white/10 bg-slate-950/70 py-5">
         <div className="container grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {site.trustSignals.map((item) => (
-            <div key={item} className="rounded-lg border border-slate-200 bg-slate-50 px-4 py-4 text-center font-black text-[var(--primary)]">
+            <div key={item} className="rounded-lg border border-white/10 bg-[var(--card-soft)] px-4 py-4 text-center font-black text-[var(--accent)]">
               {item}
             </div>
           ))}
@@ -69,8 +69,8 @@ export default function HomePage() {
           </div>
           <div className="card grid gap-4 p-4 sm:grid-cols-3">
             {site.equipment.map((item) => (
-              <div key={item.title} className="overflow-hidden rounded-lg bg-slate-50">
-                <div className="relative aspect-[4/3] bg-slate-200">
+              <div key={item.title} className="overflow-hidden rounded-lg bg-[var(--card-soft)]">
+                <div className="relative aspect-[4/3] bg-slate-800">
                   <Image
                     src={item.image}
                     alt={item.alt}
@@ -80,9 +80,9 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-5">
-                <p className="text-sm font-black text-[var(--primary)]">{item.title}</p>
+                <p className="text-sm font-black text-[var(--accent)]">{item.title}</p>
                 <p className="mt-3 text-2xl font-black">{item.spec}</p>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -90,7 +90,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
@@ -106,7 +106,7 @@ export default function HomePage() {
               <article key={service.slug} className="card flex min-h-[280px] flex-col p-5">
                 <h3 className="text-xl font-black">{service.title}</h3>
                 <p className="text-muted mt-3 text-sm leading-6">{service.value}</p>
-                <p className="mt-4 text-sm font-bold text-slate-800">適合：{service.bestFor}</p>
+                <p className="mt-4 text-sm font-bold text-slate-100">適合：{service.bestFor}</p>
                 <a href={site.lineUrl} className="btn btn-line mt-auto text-sm" data-event={`click_line_service_${service.slug}`}>
                   {service.cta}
                 </a>
@@ -130,7 +130,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section bg-white">
+      <section className="section">
         <div className="container grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="eyebrow">FAQ</p>

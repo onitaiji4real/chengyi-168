@@ -8,7 +8,7 @@ export function FloatingLineButton() {
       data-event="click_line_floating"
       aria-label="LINE 免費估價"
     >
-      <span className="h-2.5 w-2.5 rounded-full bg-white" />
+      <span className="h-2.5 w-2.5 rounded-full" />
       LINE 免費估價
     </a>
   );

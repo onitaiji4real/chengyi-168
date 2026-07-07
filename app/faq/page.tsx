@@ -14,7 +14,7 @@ export default function FaqPage() {
     <main>
       <JsonLd data={localBusinessJsonLd()} />
       <JsonLd data={faqJsonLd()} />
-      <section className="section bg-white">
+      <section className="section">
         <div className="container max-w-4xl">
           <p className="eyebrow">FAQ</p>
           <h1 className="page-title mt-3">搬家常見問答與計費方式</h1>

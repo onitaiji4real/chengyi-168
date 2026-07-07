@@ -21,7 +21,7 @@ export function SiteFooter() {
           </a>
           <p>LINE ID: {site.lineId}</p>
           <p>營業時間：{site.hours}</p>
-          <div className="relative mt-4 aspect-[648/1080] w-full max-w-[150px] overflow-hidden rounded-lg bg-white">
+          <div className="relative mt-4 aspect-[648/1080] w-full max-w-[150px] overflow-hidden rounded-lg">
             <Image
               src="/images/brand-card.jpg"
               alt={`${site.serviceAreaShort} ${site.name}聯絡名片`}

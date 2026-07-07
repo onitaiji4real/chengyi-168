@@ -24,17 +24,13 @@ npm run dev
 http://localhost:3000
 ```
 
-## 建置靜態檔
+## Production Build
 
 ```bash
 npm run build
 ```
 
-靜態輸出會產生在：
-
-```text
-out/
-```
+此專案目前採 Vercel 原生 Next.js 部署模式，不使用 `output: "export"`，因此 production build 會產生 `.next/`，由 Vercel 自動處理靜態優化、快取與部署。
 
 ## Vercel 部署
 

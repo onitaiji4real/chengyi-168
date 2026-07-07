@@ -10,6 +10,7 @@
 - Blog 文章已從大綱擴充成 6 篇完整可閱讀文章。
 - SEO/GEO 已保留 Metadata API、canonical、sitemap、robots、LocalBusiness、FAQPage，並新增 BlogPosting schema。
 - RWD/可讀性已完成第一輪 CSS 調整，並已用 Chrome headless 截圖抽查手機與桌面版。
+- 部署策略已依使用者最新指示改為 Vercel 原生 Next.js Import，不使用 `output: "export"` 或 `vercel.json` 指定 `out/`。
 
 ## 原始要求摘要
 
@@ -134,8 +135,8 @@
 ## 已完成項目
 
 - 已建立 Next.js App Router + TypeScript 專案。
-- 已設定 `next.config.ts` 的 `output: "export"`。
-- 已設定 `images.unoptimized: true` 以符合靜態輸出。
+- 已依最新部署需求移除 `next.config.ts` 的 `output: "export"`，改用 Vercel 原生 Next.js 部署。
+- 已保留 `images.unoptimized: true`，確保目前圖片設定在部署環境中穩定。
 - 已使用 Tailwind CSS。
 - 已將內容集中於 `data/site.ts`。
 - 已建立全部必要 routes：
@@ -219,8 +220,8 @@
 - 已預埋指定事件追蹤屬性。
 - 已避免 Server Actions 與動態 API routes。
 - 已將未知資料保留為 `{{PLACEHOLDER}}`。
-- 已執行 `npm run build`，確認靜態建置成功。
-- 已使用靜態輸出目錄 `out/` 啟動本機預覽並完成截圖抽查。
+- 已執行 `npm run build`，確認 Vercel 原生 Next.js build 成功。
+- 先前曾使用靜態輸出目錄 `out/` 啟動本機預覽並完成截圖抽查；最新部署模式不再依賴 `out/`。
 - 已新增客戶資料回填問卷：`docs/client-questionnaire.md`。
 
 ## 未完成項目
@@ -257,7 +258,7 @@ npm run build
 
 RWD / 可讀性抽查：
 
-- 使用 `out/` 靜態輸出搭配本機 HTTP server 預覽。
+- 先前使用 `out/` 靜態輸出搭配本機 HTTP server 預覽。
 - 已用 Chrome headless 擷取並檢查：
   - `tmp/screenshots/final-home-mobile.png`
   - `tmp/screenshots/final-blog-mobile-short.png`
@@ -308,7 +309,7 @@ npm audit --omit=dev
   - 首頁加入 WebSite JSON-LD。
 - 驗證：
   - 已執行 `npm run build`，成功。
-  - 已抽查 `out/blog/.../index.html`，確認文章內容、canonical、OG image、BlogPosting JSON-LD 有輸出。
+  - 先前已抽查 `out/blog/.../index.html`，確認文章內容、canonical、OG image、BlogPosting JSON-LD 有輸出。
 
 ### 2026-07-07 第三輪
 
@@ -326,9 +327,10 @@ npm audit --omit=dev
 - 調整 JSON-LD 輸出：
   - Email、Google Maps、Place ID、座標沒有資料時不輸出空欄位。
   - `priceRange` 改用客戶提供的價格說明。
-- 新增 `vercel.json`：
-  - `buildCommand`: `npm run build`
-  - `outputDirectory`: `out`
+- 部署策略調整：
+  - 使用 Vercel Import GitHub 專案，由 Vercel 自動偵測 Next.js。
+  - 不使用 `output: "export"`，避免 Vercel 部署卡在 export/finalize 流程。
+  - 不保留 `vercel.json` 的 `outputDirectory: "out"`。
 - 修正首頁深藍 CTA 對比不足問題：
   - 新增 `.btn-dark` 共用樣式，明確指定深藍底與白色文字。
   - 將「查看完整服務」與「查看完整 FAQ」改用 `.btn-dark`，避免深色文字壓在深色背景上。
@@ -347,3 +349,19 @@ npm audit --omit=dev
   - 截圖確認主要文字、圖片、CTA 沒有明顯破版或低對比問題。
   - 修正 CTA 對比後再次執行 `npm run build`，成功。
   - 回填第一批客戶資料後再次執行 `npm run build`，成功。
+
+### 2026-07-07 第四輪
+
+- 依使用者要求調整為黑色調背景：
+  - 全站背景改為深藍黑。
+  - Header 改為深色 sticky header。
+  - 卡片改為深灰藍底與淺色文字。
+  - 原白底區塊改為深色區塊或透明深色區塊。
+  - 亮黃色保留作為標籤與重點 CTA 強調色。
+- 依使用者最新部署方式調整：
+  - Vercel 由使用者自行 Import GitHub repository。
+  - 專案內改為 Vercel 原生 Next.js build。
+  - `next.config.ts` 不使用 `output: "export"`。
+  - 不使用 `vercel.json` 指定 `out/`。
+- 驗證：
+  - 已執行 `npm run build`，成功。

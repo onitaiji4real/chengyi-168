@@ -26,7 +26,7 @@ export default function ServicesPage() {
               我們以高雄市三民區為服務據點，基本不限制縣市，全台搬運需求都可先透過 LINE 傳照片討論。
             </p>
           </div>
-          <div className="relative mx-auto aspect-[655/1074] w-full max-w-[320px] overflow-hidden rounded-lg bg-white/10 shadow-2xl shadow-slate-950/30 ring-1 ring-white/15">
+          <div className="relative mx-auto aspect-[655/1074] w-full max-w-[320px] overflow-hidden rounded-lg/10 shadow-2xl shadow-slate-950/30 ring-1 ring-white/15">
             <Image
               src="/images/services-overview.jpg"
               alt={`${site.serviceAreaShort} ${site.name}五大搬家服務總覽`}
@@ -47,7 +47,7 @@ export default function ServicesPage() {
               </div>
               <div className="min-w-0">
                 <h2 className="card-title">{service.title}</h2>
-                <p className="mt-3 font-bold text-slate-800">價值：{service.value}</p>
+                <p className="mt-3 font-bold text-slate-100">價值：{service.value}</p>
                 <p className="text-muted mt-2 leading-7">適合誰：{service.bestFor}</p>
                 <p className="text-muted mt-2 leading-7">{service.description}</p>
               </div>
